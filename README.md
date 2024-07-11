@@ -1,1 +1,1 @@
-# node-typescript-tanzu-scheduler
+# tas-scheduler-node-typescript-demo
