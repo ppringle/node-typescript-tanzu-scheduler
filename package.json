@@ -1,0 +1,30 @@
+{
+  "name": "tas-scheduler-node-typescript-demo",
+  "version": "1.0.0",
+  "description": "## A demo app which leverages the Tanzu Application Scheduler in a NodeJS application",
+  "main": "dist/index.js",
+  "engines" : {
+    "npm" : "10.8.2",
+    "node" : "20.13.1"
+  },
+  "scripts": {
+    "build": "npm run clean && npx tsc",
+    "clean": "rimraf dist",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}

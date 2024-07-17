@@ -1,0 +1,13 @@
+---
+version: 1
+applications:
+  - name: tas-scheduler-node-typescript-demo
+    memory: 256M
+    instances: 1
+    buildpacks:
+      - nodejs_buildpack
+    path: .
+    no-route: true
+    services:
+      - pcf-scheduler
+    command: npm run-script start
